@@ -1,0 +1,54 @@
+{
+  "name": "@altoninelli/agentkit-action-provider-selfpaid",
+  "version": "1.0.0",
+  "description": "Official Coinbase AgentKit Action Provider for SelfPaidPal — Zero-net-cost autonomous payments, tips, and bounties with 100% capital recovery via DeFi yield on Base (Aave V3 & Morpho).",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node test/actionProvider.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "agentkit",
+    "coinbase",
+    "coinbase-agentkit",
+    "action-provider",
+    "ai-agents",
+    "base",
+    "defi",
+    "zero-cost",
+    "yield-farming",
+    "aave",
+    "morpho",
+    "payments",
+    "tipping"
+  ],
+  "author": "Alessandro Toninelli",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/altoninelli/agentkit-selfpaid.git"
+  },
+  "homepage": "https://selfpaid.cryptofolio.it",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@coinbase/agentkit": ">=0.1.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@coinbase/agentkit": "^0.10.4",
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5",
+    "zod": "^3.23.8"
+  }
+}
